@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="row g-3">
+        <div class="col">
+            <select id="" [(ngModel)]="dia" name="dia">
+                <option value="today">Hoy</option>
+                <option value="yesterday">Ayer</option>
+                <option value="tomorrow">Mañana</option>
+            </select>
+        </div>
+        <div class="col">
+            <select id="" [(ngModel)]="signo" name="signo">
+                <option value="aries">Aries</option>
+                <option value="taurus">Tauro</option>
+                <option value="gemini">Geminis</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpio">Escorpio</option>
+                <option value="sagittarius">Sagitario</option>
+                <option value="capricornus">Capricornio</option>
+                <option value="aquarius">Acuario</option>
+                <option value="pisces">Piscis</option>
+            </select>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" (click)="mandarSigno()">Button</button>
+        </div>
+    </div>
+    <div class="row">
+        <ul>
+            <li>{{horoscopo.color}}</li>
+            <li>{{horoscopo.current_date}}</li>
+            <li>{{horoscopo.date_range}}</li>
+            <li>{{horoscopo.descripcion}}</li>
+        </ul>
+    </div>
+</div>
